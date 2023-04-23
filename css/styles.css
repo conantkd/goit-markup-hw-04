@@ -113,6 +113,7 @@ span.tel-mail {
 .hero-container {
   background-image: url("../images/imageoverlay-hero.png"),
     url("../images/image-hero-sec.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
   padding-left: 15px;
