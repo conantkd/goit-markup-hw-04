@@ -2,6 +2,7 @@
   --brand-color: #212121;
   --link-color: #2196f3;
   --contact-color: #757575;
+  --cards-color: #f5f4fa;
   --header-border: #ececec;
   --banner-color: #ffffff;
 }
@@ -108,7 +109,7 @@ span.tel-mail {
 
 .hero-container {
   background-image: url("../images/imageoverlay-hero.png"),
-  url("../images/image-hero-sec.jpg");
+    url("../images/image-hero-sec.jpg");
   background-repeat: no-repeat;
   margin: 0 auto;
   padding-left: 15px;
@@ -153,3 +154,44 @@ span.tel-mail {
 .hero .hero-container .container .req-serv:focus {
   background-color: #188ce8;
 }
+
+/* Brand-values section */
+
+.brand-values .container .cards {
+  display: flex;
+  gap: 30px;
+  padding-top: 89px;
+}
+
+.brand-values .container .cards .cards-container {
+  background-color: var(--cards-color);
+  border-radius: 4px;
+  padding: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.brand-values .container .cards h3 {
+  color:var(--brand-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.14em;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.brand-values .container .cards p {
+  color:var(--contact-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 2em;
+  word-wrap: break-word;
+}
+
+
+
