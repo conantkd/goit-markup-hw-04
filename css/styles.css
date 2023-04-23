@@ -149,7 +149,7 @@ span.tel-mail {
   text-align: center;
 }
 
-.hero .container .req-serv:hover,
-.hero .container .req-serv:focus {
+.hero .hero-container .container .req-serv:hover,
+.hero .hero-container .container .req-serv:focus {
   background-color: #188ce8;
 }
