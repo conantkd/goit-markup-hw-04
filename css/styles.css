@@ -5,6 +5,7 @@
   --cards-color: #f5f4fa;
   --header-border: #ececec;
   --banner-color: #ffffff;
+  --svg-color: #afb1b8;
 }
 * {
   padding: 0;
@@ -52,6 +53,9 @@ a.active {
 
 /* Icon deffaults*/
 
+.icon {
+  fill: var(--svg-color);
+}
 /*header nav bar*/
 .landing-header {
   border-bottom: 1px solid #ececec;
@@ -210,15 +214,18 @@ span.tel-mail {
 }
 
 .services .container .services-images {
-  display: flex;gap: 29px;
-
+  display: flex;
+  gap: 30px;
+  padding-bottom: 94px;
 }
+
+/*images with overlays*/
 
 .services .container .services-images li:nth-child(1) {
   align-items: flex-end;
   display: flex;
   background-image: url("../images/imagelabel.png"), url("../images/image.jpg");
-  background-position: bottom,center;
+  background-position: bottom, center;
   background-size: 370px 70px, 370px 294px;
   background-repeat: no-repeat;
   padding-left: 51.55px;
@@ -230,7 +237,7 @@ span.tel-mail {
   align-items: flex-end;
   display: flex;
   background-image: url("../images/imagelabel.png"), url("../images/image1.jpg");
-  background-position: bottom,center;
+  background-position: bottom, center;
   background-size: 370px 70px, 370px 294px;
   background-repeat: no-repeat;
   padding-left: 73.3px;
@@ -242,7 +249,7 @@ span.tel-mail {
   align-items: flex-end;
   display: flex;
   background-image: url("../images/imagelabel.png"), url("../images/image2.jpg");
-  background-position: bottom,center;
+  background-position: bottom, center;
   background-size: 370px 70px, 370px 294px;
   background-repeat: no-repeat;
   padding-left: 74.3px;
@@ -260,5 +267,127 @@ span.tel-mail {
   margin-top: 224px;
   text-transform: uppercase;
   text-align: center;
+  white-space: nowrap;
 }
 
+/*our team section*/
+
+.team {
+  background-color: var(--cards-color);
+}
+
+.team .container h2 {
+  color: var(--brand-color);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.17em;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.team .container .team-members {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 89px;
+}
+
+.team .container .team-members li {
+  background-color: var(--banner-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team .container .team-members li h3 {
+  color: var(--brand-color);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.18em;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.team .container .team-members li p {
+  color: var(--contact-color);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.18em;
+  padding-bottom: 16px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.team .container .team-members .card-social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.team .container .team-members .card-social li {
+  box-shadow: none;
+  border-radius: none;
+  padding-bottom: 30px;
+}
+
+.team .container .team-members .card-social li a {
+  align-items: center;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+
+.team .container .team-members .card-social li a:hover,
+.team .container .team-members .card-social li a:focus {
+  background-color: var(--link-color);
+}
+
+.team .container .team-members .card-social li a:hover .icon,
+.team .container .team-members .card-social li a:focus .icon {
+  fill: var(--banner-color);
+}
+
+.clients .container h2 {
+  color: var(--brand-color);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.16em;
+  padding-top: 64px;
+  padding-bottom: 44px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.clients .container ul {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 151px;
+}
+
+.clients .container ul li a {
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  height: 81px;
+  width: 170px;
+}
+
+.clients .container ul li a:hover,.clients .container ul li a:focus {
+  border:1px solid #2196F3; ;
+}
+
+.clients .container ul li a:hover .icon,
+.clients .container ul li a:focus .icon {
+  fill: var(--link-color);
+}
