@@ -104,9 +104,11 @@ a.active {
 
 .contact-header li a:focus,
 .contact-header li a:hover {
-  color: var(--link-color);
-  fill: var(--link-color);
+  color: var(--link-color); 
 }
+.contact-header li a:focus .icon,
+.contact-header li a:hover .icon {
+fill: var(--link-color);}
 
 span.tel-mail {
   padding-left: 10px;
