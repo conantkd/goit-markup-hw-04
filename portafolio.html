@@ -16,57 +16,65 @@
     <title hidden>Portafolio</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="container">
-        <h1 class="logo"><a href="#">WebStudio</a></h1>
-        <nav class="nav-header">
-          <ul class="no-bullets nav-bar">
-            <li><a href="./index.html">Estudio</a></li>
-            <li><a href="./portafolio.html" class="active">Portafolio</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-        <div class="contact-top">
-          <ul class="no-bullets contact-header contact-with-svg">
+    <header>
+      <section class="landing-header">
+        <div class="container">
+          <h1>WebStudio</h1>
+          <!-- nav bar on top -->
+          <nav class="nav-top">
+            <ul class="nav-header-porta no-bullets">
+              <li>
+                <a href="./index.html"><h2>Estudio</h2></a>
+              </li>
+              <li>
+                <a href="portafolio.html" class="active"><h2>Portafolio</h2></a>
+              </li>
+              <li>
+                <a href="#"><h2>Contacto</h2></a>
+              </li>
+            </ul>
+          </nav>
+          <!-- contact with icons on top -->
+
+          <ul class="contact-header no-bullets">
             <li>
-              <img
-                src="./images/mail.svg"
-                class="svg-contact"
-                width="16px"
-                height="12px"
-                alt="" />
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a href="mailto:info@devstudio.com"
+                ><svg class="icon" width="16" height="12">
+                  <use href="./images/icons.svg#mail"></use>
+                </svg>
+                <span class="tel-mail">info@devstudio.com</span></a
+              >
             </li>
             <li>
-              <img
-                src="./images/tel.svg"
-                class="svg-contact"
-                width="10px"
-                height="16px"
-                alt="" /><a href="tel:+525555296000">+52 55 5529 6000</a>
+              <a href="tel:+525555296000"
+                ><svg class="icon" width="10" height="16">
+                  <use href="./images/icons.svg#tel"></use>
+                </svg>
+                <span class="tel-mail">+52 55 5529 6000</span></a
+              >
             </li>
           </ul>
         </div>
-      </div>
+      </section>
     </header>
     <main>
       <section class="menu-filter">
         <div class="container">
           <div class="container-menu">
             <button type="button" class="button-filter">
-              <h2 class="txt-button-filter">Todo</h2>
+            Todo
             </button>
             <button type="button" class="button-filter">
-              <h2 class="txt-button-filter">Sitios-web</h2>
+              Sitios-web
             </button>
             <button type="button" class="button-filter">
-              <h2 class="txt-button-filter">Aplicaciones</h2>
+             Aplicaciones
             </button>
             <button type="button" class="button-filter">
-              <h2 class="txt-button-filter">Diseño</h2>
+              Diseño
             </button>
             <button type="button" class="button-filter">
-              <h2 class="txt-button-filter">Marketing</h2>
+              Marketing
             </button>
           </div>
         </div>
@@ -160,59 +168,55 @@
       </section>
     </main>
     <footer>
-      <address class="footer-bar-porta">
-        <div class="container-porta">
-          <div class="column-footer">
-            <a href="#"><span class="footer-title">WebStudio</span></a>
-            <ul class="no-bullets footer-adress">
-              <li class="footer-adress">
-                Calz. Ticomán 500, Ciudad de<br />
-                México, CDMX, México
+      <address class="landing-footer">
+      <div class="container">
+        <ul class="no-bullets landing-footer-list">
+          <li><h3>WebStudio</h3></li>
+          <li>
+            <p>
+              Calz. Ticomán 500, Ciudad de<br />
+              México, CDMX, México
+            </p>
+          </li>
+          <li><a href="mailto:info@example.com">info@example.com</a></li>
+          <li><a href="tel:+525555296000">+52 55 5529 6000</a></li>
+        </ul>
+        <ul class="no-bullets landing-footer-social">
+          <li><h3>encuentranos en</h3></li>
+          <li>
+            <ul>
+              <li>
+                <a href="#">
+                  <svg class="icon" height="20" width="20" viewBox="0 0 20 20">
+                    <use href="./images/icons.svg#insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon" height="20" width="20" viewBox="0 0 20 20">
+                    <use href="./images/icons.svg#twit"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon" height="20" width="20" viewBox="0 0 20 20">
+                    <use href="./images/icons.svg#face"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon" height="20" width="20" viewBox="0 0 20 20">
+                    <use href="./images/icons.svg#linke"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-            <ul class="no-bullets footer-mail-tel">
-              <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li>
-                <a href="tel:+525555296000">+52 55 5529 6000</a>
-              </li>
-            </ul>
-          </div>
-          <div class="column-footer">
-            <h3 class="txt-social-network">ENCUENTRANOS EN</h3>
-            <ul class="no-bullets social-network-footer">
-              <li>
-                <img
-                  src="./images/insta.png"
-                  width="44px"
-                  height="44px"
-                  alt="" /><a href="#"></a>
-              </li>
-              <li>
-                <img
-                  src="./images/twitter.png"
-                  width="44px"
-                  height="44px"
-                  alt="" /><a href="#"></a>
-              </li>
-              <li>
-                <img
-                  src="./images/face.png"
-                  width="44px"
-                  height="44px"
-                  alt="" /><a href="#"></a>
-              </li>
-              <li>
-                <img
-                  src="./images/linke.png"
-                  width="44px"
-                  height="44px"
-                  alt="" /><a href="#"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+          </li>
+        </ul>
+      </div>
       </address>
     </footer>
   </body>

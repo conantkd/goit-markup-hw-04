@@ -49,15 +49,12 @@ a:focus {
   color: var(--link-color);
 }
 
-a.active {
-  color: var(--link-color);
-}
-
 /* Icon deffaults*/
 
 .icon {
   fill: var(--svg-color);
 }
+
 /*header nav bar*/
 .landing-header {
   border-bottom: 1px solid #ececec;
@@ -65,6 +62,17 @@ a.active {
 
 .landing-header .container {
   display: flex;
+}
+
+.landing-header .container h1 {
+  color: var(--link-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.19em;
+  padding-top: 24px;
+  padding-bottom: 6px;
 }
 
 .landing-header .container .nav-header {
@@ -76,11 +84,27 @@ a.active {
   padding-bottom: 32px;
 }
 
+/*header on portafolio*/
+.landing-header .container .nav-header-porta {
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .nav-top {
   margin: 0;
 }
 
-.nav-header h2 {
+.landing-header .container .nav-header a,
+.landing-header .container .nav-header-porta a {
+  text-decoration: none;
+}
+
+.nav-header h2,
+.nav-header-porta h2 {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.17em;
@@ -108,9 +132,14 @@ a.active {
 .contact-header li a:hover {
   color: var(--link-color);
 }
+
 .contact-header li a:focus .icon,
 .contact-header li a:hover .icon {
   fill: var(--link-color);
+}
+
+a.active {
+  color: var(--link-color);
 }
 
 span.tel-mail {
@@ -159,7 +188,6 @@ span.tel-mail {
   padding: 2px;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: center;
 }
 
 .hero .hero-container .container .req-serv:hover,
@@ -400,7 +428,78 @@ span.tel-mail {
   fill: var(--link-color);
 }
 
+/**portafolio web**/
+
+.container-menu {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding-top: 106px;
+  padding-bottom: 50px;
+}
+
+.container-menu .button-filter {
+  background-color: var(--cards-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.62em;
+  padding: 6px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.container-menu .button-filter:focus, .container-menu .button-filter:hover {
+  background-color: var(--link-color);
+  color: var(--banner-color);
+}
+
+.window .container .visualizer-windows {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 82px;
+}
+
+.window .container .visualizer-windows li {
+  border: 1px solid #EEEEEE;
+}
+
+.window .container .visualizer-windows li:focus, .window .container .visualizer-windows li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.window .container .visualizer-windows li h3 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 2em;
+  padding: 24px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+}
+
+.window .container .visualizer-windows li p {
+  color: var(--contact-color);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.87em;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+
 /*footer*/
+
+.landing-footer {
+  font-style: normal;
+}
 
 .landing-footer {
   background-color: var(--footer-color);
@@ -445,7 +544,7 @@ span.tel-mail {
 /*footer socials*/
 
 .landing-footer .container {
-  display:flex;
+  display: flex;
   flex: 1;
   gap: 45px;
 }
@@ -458,12 +557,10 @@ span.tel-mail {
   line-height: 1.14em;
   text-transform: uppercase;
   padding-bottom: 20px;
-  padding-top:67px;
+  padding-top: 67px;
 }
 
-
-
-.landing-footer .container .landing-footer-social li ul{
+.landing-footer .container .landing-footer-social li ul {
   display: flex;
   gap: 11px;
 }
@@ -486,6 +583,7 @@ span.tel-mail {
   fill: var(--banner-color);
 }
 
-.landing-footer .container .landing-footer-social li ul li a:focus, .landing-footer .container .landing-footer-social li ul li a:hover {
+.landing-footer .container .landing-footer-social li ul li a:focus,
+.landing-footer .container .landing-footer-social li ul li a:hover {
   background-color: var(--link-color);
 }
